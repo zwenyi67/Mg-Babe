@@ -1,0 +1,451 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mg&Babe</title>
+    <link rel="shortcut icon" href="./image/lovei.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+
+
+    <!-- First Section (Start) -->
+
+    <div id="start" style="height: 100vh; overflow-x: hidden; overflow-y: hidden;"
+        class="container-fluid d-flex flex-column justify-content-center align-items-center start-con">
+        <div class="tab-box">
+            <div style="overflow-y: hidden;" id="firsttab" class="row mb-5 animate__animated">
+                <div class="d-flex justify-content-center count-con">
+                    <div class="count-box">
+                        <div id="year" class="count-num fa-bounce">00</div>
+                        <div class="count-fix">Year</div>
+                    </div>
+                    <div class="count-box">
+                        <div id="month" class="count-num fa-bounce">00</div>
+                        <div class="count-fix">Month</div>
+                    </div>
+                    <div class="count-box">
+                        <div id="day" class="count-num fa-bounce">00</div>
+                        <div class="count-fix">Day</div>
+                    </div>
+                </div>
+                <div class="slogan">
+                    Our Love will never die & still counting ...
+                </div>
+                <div class="audio">
+                    <audio class="" id="background-music" src="audio/love.mp3" autoplay controls></audio>
+                    <!-- autoplay loop controls -->
+                </div>
+
+
+            </div>
+            <div id="secondtab" class="row mb-5 d-none animate__animated ">
+                <div class="d-flex justify-content-center">
+                    <img class="banner-img" src="image/start-banner.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="mt-5">
+
+        </div>
+        <div class="row d-flex justify-content-center mt-5">
+            <div class="d-flex">
+                <button onclick="setActive(event,'first')" class="tab-btn tab-active"><i
+                        class="fa-solid fa-heart"></i></button>
+                <button onclick="setActive(event,'second')" class="tab-btn "><i class="fa-solid fa-heart"></i></button>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="d-flex justify-content-center">
+                <div id="malebox" class="animate__animated">
+                    <div class="avatar-box">
+                        <img class="avatar" src="/image/tyler.jpg" alt="">
+                    </div>
+                    <div class="d-flex justify-content-center mt-3">
+                        <div class="me-2">
+                            <i class="fa-solid fa-mars male"></i>
+                        </div>
+                        <div class="nickname">
+                            Mg
+                        </div>
+                    </div>
+                </div>
+                <div style="overflow-y: hidden;" id="heartbox" class="heart-box animate__animated">
+                    <i style="position: absolute;" class="fa-solid fa-heart heart-shape"></i>
+                    <div style="position: relative; z-index: 1000;" id="count-days">0000</div>
+                </div>
+                <div id="femalebox" class="animate__animated">
+                    <div class="avatar-box">
+                        <img class="avatar" src="/image/babe.png" alt="">
+                    </div>
+                    <div class="d-flex justify-content-center mt-3">
+                        <div class="me-2">
+                            <i class="fa-solid fa-venus female"></i>
+                        </div>
+                        <div class="nickname">
+                            Babe
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div style="height: 100vh; overflow-x: hidden;"
+        class="container-fluid d-flex flex-column justify-content-center align-items-center anni-con" id="home">
+        <div class="d-flex justify-content-center mt-2 mb-4">
+            <div id="image1" class="animate__animated">
+                <img class="img-group-banner" src="/image/1.jpg" alt="">
+            </div>
+            <div id="image2" class="animate__animated">
+                <img class="img-group-banner" src="/image/2.jpg" alt="">
+            </div>
+        </div>
+        <div id="bannertext" class="d-flex justify-content-center animate__animated">
+            Happy 3 Year Anniversary Mg Kha Lay Lyy <i class="fa-solid fa-heart ms-2 pt-2"></i>
+        </div>
+        <div class="d-flex justify-content-center mt-4 mb-2">
+            <div id="image3" class="animate__animated">
+                <img class="img-group-banner" src="/image/3.jpg" alt="">
+            </div>
+            <div id="image4" class="animate__animated">
+                <img class="img-group-banner" src="/image/4.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div style="overflow-x: hidden;"
+        class="container-fluid d-flex flex-column justify-content-center align-items-center firstlove-con" id="anni">
+        <div class="row">
+            <div class="d-flex anni-title">
+                3-Year Anniversary Wishes From Mg
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-2">
+
+            </div>
+            <div style="overflow-x: hidden;" class="col-lg-8">
+                <div style="max-width: 100%;" id="annimsg" class="anni-msg animate__animated">
+                    
+                    <div> <span style="font-family: 'Lucida Handwriting';">''</span>
+                        Today marks three beautiful years of us being together, and I can hardly believe how time has
+                        flown. From the very first moment I met you, I knew you were special, but I never imagined how
+                        profoundly you would change my life. Every day with you has been a blessing, filled with
+                        laughter, joy, and an incredible love that continues to grow deeper with each passing moment.
+                    </div>
+                    <div>
+                        You are my heart, my soul, my best friend, and the love of my life. Your smile lights up my
+                        darkest days, and your presence brings me a peace I have never known before. I am endlessly
+                        grateful for your love, your patience, and your unwavering support. I cherish every moment we share, every kiss,
+                        every laugh, and even the quiet moments of simply being together. You have made my life more
+                        beautiful than I ever dreamed it could be.
+                    </div>
+                    <div>
+                        As we celebrate this milestone, I want you to know just how deeply I love you. My heart beats
+                        for you and only you, and I promise to cherish you and our love forever. Here's to many more
+                        years of happiness, adventures, and a love that only grows stronger with time.
+                    </div>
+                    <div>
+                        Happy Anniversary, my love. Thank you for being my everything.<span style="font-family: 'Lucida Handwriting';">''</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2">
+
+            </div>
+        </div>
+    </div>
+
+    <div style="overflow-x: hidden;"
+        class="container-fluid d-flex justify-content-center align-items-center firstlove-con" id="firstlove">
+        <div class="row">
+            <div style="overflow-x: hidden;" class="col-lg-6 py-5">
+                <div>
+                    <div class="d-flex justify-content-center">
+                        <div id="mylove1" class="d-flex justify-content-center animate__animated">
+                            <img class="mylove" src="mylove/mylove1.jpg" alt="">
+                        </div>
+                        <div id="mylove2" class="d-flex justify-content-center animate__animated">
+                            <img class="mylove" src="mylove/mylove5.jpg" alt="">
+                        </div>
+                        <div id="mylove3" class="d-flex justify-content-center animate__animated">
+                            <img class="mylove" src="mylove/mylove3.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <div id="mylove4" class="d-flex justify-content-center animate__animated">
+                            <img class="mylove" src="mylove/mylove4.jpg" alt="">
+                        </div>
+                        <div id="mylove5" class="d-flex justify-content-center animate__animated">
+                            <img class="mylove" src="mylove/mylove2.jpg" alt="">
+                        </div>
+                        <div id="mylove6" class="d-flex justify-content-center animate__animated">
+                            <img class="mylove" src="mylove/mylove6.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <div id="mylove7" class="d-flex justify-content-center animate__animated">
+                            <img class="mylove" src="mylove/mylove8.jpg" alt="">
+                        </div>
+                        <div id="mylove8" class="d-flex justify-content-center animate__animated">
+                            <img class="mylove" src="mylove/mylove7.jpg" alt="">
+                        </div>
+                        <div id="mylove9" class="d-flex justify-content-center animate__animated">
+                            <img class="mylove" src="mylove/mylove9.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="overflow-x: hidden;" class="col-lg-5 py-5">
+                <div style="max-width: 100%;" id="mylovemsg"
+                    class="mylove-msg d-flex flex-column justify-content-center align-items-center animate__animated">
+                    <div>
+                        Every moment we share feels like a beautiful dream I never want to wake from. From the very
+                        first
+                        time I saw you, I was captivated by your radiant smile and those enchanting eyes that hold the
+                        universe within them. Your smile lights up my world and your eyes, oh, those eyes, they speak to
+                        my
+                        soul in ways words never could.
+                    </div>
+                    <div>
+                        Before we even started dating, I found myself falling deeper and deeper in love with you. I
+                        admired
+                        you from afar, mesmerized by your grace, your kindness, and the sheer beauty of your presence.
+                        Each
+                        day, my love for you grows stronger, more profound, and more unshakable.
+                    </div>
+                    <div>
+                        I want you to know how much you mean to me. You are my everything, my heart, my soul, my
+                        everything.
+                        I love you more than words can say, and I cherish every single moment we spend together.
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-1">
+
+            </div>
+        </div>
+    </div>
+
+
+    <div id="love" style="height: 100vh; overflow-x: hidden;"
+        class="container-fluid d-flex flex-column justify-content-center align-items-center home-con">
+        <div>
+            <div class="d-flex justify-content-center">
+                <div id="love-img1" class="animate__animated">
+                    <img class="heart-img mx-5" src="/couple/couple1.jpg" alt="">
+                </div>
+                <div id="love-img2" class="animate__animated">
+                    <img class="heart-img mx-5" src="/couple/couple2.jpg" alt="">
+                </div>
+            </div>
+            <div class="d-flex justify-content-center">
+                <div id="love-img3" class="animate__animated">
+                    <img class="heart-img" src="/couple/couple3.jpg" alt="">
+                </div>
+                <div id="love-img4" class="animate__animated">
+                    <img class="heart-img" src="/couple/couple4.jpg" alt="">
+                </div>
+                <div id="love-img5" class="animate__animated">
+                    <img class="heart-img" src="/couple/couple5.jpg" alt="">
+                </div>
+                <div id="love-img6" class="animate__animated">
+                    <img class="heart-img" src="/couple/couple6.jpg" alt="">
+                </div>
+                <div id="love-img7" class="animate__animated">
+                    <img class="heart-img" src="/couple/couple7.jpg" alt="">
+                </div>
+            </div>
+            <div class="d-flex justify-content-center">
+                <div id="love-img8" class="animate__animated">
+                    <img class="heart-img" src="/couple/couple8.jpg" alt="">
+                </div>
+                <div id="love-img9" class="animate__animated">
+                    <img class="heart-img" src="/couple/couple9.jpg" alt="">
+                </div>
+                <div id="love-img10" class="animate__animated">
+                    <img class="heart-img" src="/couple/couple10.jpg" alt="">
+                </div>
+                <div id="love-img11" class="animate__animated">
+                    <img class="heart-img" src="/couple/couple11.jpg" alt="">
+                </div>
+                <div id="love-img12" class="animate__animated">
+                    <img class="heart-img" src="/couple/couple12.jpg" alt="">
+                </div>
+            </div>
+            <div class="d-flex justify-content-center">
+                <div id="love-img13" class="animate__animated">
+                    <img class="heart-img" src="/couple/couple13.jpg" alt="">
+                </div>
+                <div id="love-img14" class="animate__animated">
+                    <img class="heart-img" src="/couple/couple14.jpg" alt="">
+                </div>
+                <div id="love-img15" class="animate__animated">
+                    <img class="heart-img" src="couple/couple15.jpg" alt="">
+                </div>
+            </div>
+            <div class="d-flex justify-content-center">
+                <div id="love-img16" class="animate__animated" class="">
+                    <img class="heart-img" src="couple/couple16.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div style="overflow-x: hidden;"
+        class="container-fluid d-flex flex-column justify-content-center align-items-center p-5" id="kiss">
+        <div class="row">
+            <div class="col-lg-1">
+
+            </div>
+            <div class="col-lg-3 animate__animated" id="leftkiss">
+                <div class="d-flex justify-content-center align-items-center">
+                    <img class="kiss-img" src="./image/kiss11.jpg" alt="">
+                    <img class="kiss-img" src="./image/kiss12.jpg" alt="">
+                </div>
+                <div class="d-flex justify-content-center align-items-center">
+                    <img class="kiss-img" src="./image/kiss31.jpg" alt="">
+                    <img class="kiss-img" src="./image/kiss32.jpg" alt="">
+                </div>
+            </div>
+            <div class="col-lg-4 d-flex justify-content-center align-items-center">
+                <div class="text-center p-5 animate__animated" id="kisstext">
+                    <div>A Myrr Gyi Chit tl <i class="fa-solid fa-heart fa-bounce ms-1"></i></div> <div> Mg's Kha lay lyy yayy</div>
+                </div>
+            </div>
+            <div class="col-lg-3 animate__animated" id="rightkiss">
+                <div class="d-flex justify-content-center align-items-center">
+                    <img class="kiss-img" src="./image/kiss21.jpg" alt="">
+                    <img class="kiss-img" src="./image/kiss22.jpg" alt="">
+                </div>
+                <div class="d-flex justify-content-center align-items-center">
+                    <img class="kiss-img" src="./image/mgg.jpg" alt="">
+                    <img class="kiss-img" src="./image/babe.jpg" alt="">
+                </div>
+            </div>
+            <div class="col-lg-1">
+
+            </div>
+        </div>
+    </div>
+
+
+    <div style="overflow-x: hidden;"
+        class="container-fluid d-flex flex-column justify-content-center align-items-center hand-con">
+        <div>
+            <div class="hand-quote">
+                I WILL HOLD YOUR HAND FOREVER
+            </div>
+
+            <div class="d-flex  justify-content-center">
+                <div id="hand-img1" class="animate__animated">
+                    <img class="hand-img" src="/hand/hand1.jpg" alt="">
+                </div>
+                <div id="hand-img2" class="animate__animated">
+                    <img class="hand-img" src="/hand/hand2.jpg" alt="">
+                </div>
+                <div id="hand-img3" class="animate__animated">
+                    <img class="hand-img" src="/hand/hand3.jpg" alt="">
+                </div>
+                <div id="hand-img4" class="animate__animated">
+                    <img class="hand-img" src="/hand/hand4.jpg" alt="">
+                </div>
+                <div id="hand-img5" class="animate__animated">
+                    <img class="hand-img" src="/hand/hand5.jpg" alt="">
+                </div>
+                <div id="hand-img6" class="animate__animated">
+                    <img class="hand-img" src="/hand/hand6.jpg" alt="">
+                </div>
+                <div id="hand-img7" class="animate__animated">
+                    <img class="hand-img" src="/hand/hand7.jpg" alt="">
+                </div>
+            </div>
+            <div class="d-flex justify-content-center iloveu">
+                I Love You I Love You I Love You I Love You I Love You I Love You I Love You I Love You I Love You I
+                Love You I Love You I Love You
+            </div>
+            <div class="d-flex justify-content-center">
+                <div id="hand-img8" class="animate__animated">
+                    <img class="hand-img" src="/hand/hand8.jpg" alt="">
+                </div>
+                <div id="hand-img9" class="animate__animated">
+                    <img class="hand-img" src="/hand/hand9.jpg" alt="">
+                </div>
+                <div id="hand-img10" class="animate__animated">
+                    <img class="hand-img" src="/hand/hand10.jpg" alt="">
+                </div>
+                <div id="hand-img11" class="animate__animated">
+                    <img class="hand-img" src="/hand/hand11.jpg" alt="">
+                </div>
+                <div id="hand-img12" class="animate__animated">
+                    <img class="hand-img" src="/hand/hand12.jpg" alt="">
+                </div>
+                <div id="hand-img13" class="animate__animated">
+                    <img class="hand-img" src="/hand/hand13.jpg" alt="">
+                </div>
+                <div id="hand-img14" class="animate__animated">
+                    <img class="hand-img" src="/hand/hand14.jpg" alt="">
+                </div>
+            </div>
+            <div class="d-flex justify-content-center iloveu">
+                I Love You I Love You I Love You I Love You I Love You I Love You I Love You I Love You I Love You I
+                Love You I Love You I Love You
+            </div>
+            <div class="d-flex justify-content-center">
+                <div id="hand-img15" class="animate__animated">
+                    <img class="hand-img" src="/hand/hand15.jpg" alt="">
+                </div>
+                <div id="hand-img16" class="animate__animated" class="">
+                    <img class="hand-img" src="/hand/hand16.jpg" alt="">
+                </div>
+                <div id="hand-img17" class="animate__animated" class="">
+                    <img class="hand-img" src="/hand/hand17.jpg" alt="">
+                </div>
+                <div id="hand-img18" class="animate__animated" class="">
+                    <img class="hand-img" src="/hand/hand18.jpg" alt="">
+                </div>
+                <div id="hand-img19" class="animate__animated" class="">
+                    <img class="hand-img" src="/hand/hand19.jpg" alt="">
+                </div>
+                <div id="hand-img20" class="animate__animated" class="">
+                    <img class="hand-img" src="/hand/hand20.jpg" alt="">
+                </div>
+                <div id="hand-img21" class="animate__animated" class="">
+                    <img class="hand-img" src="/hand/hand21.jpg" alt="">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div>
+        <div class="copyright" style="background-color: rgb(252, 127, 169); color: rgb(218, 73, 97);">
+            Copyright © 2024 Mg&Babe. All Rights Reserved
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+    <!-- <script src="jquery.min.js"></script> -->
+
+</body>
+
+</html>
