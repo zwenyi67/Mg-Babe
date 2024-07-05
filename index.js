@@ -1,5 +1,5 @@
 // Define the date of your first date (year, month (0-indexed), day)
-const firstDate = new Date(2021, 7, 6); // June 26, 2021 (months are 0-indexed)
+const firstDate = new Date(2021, 7, 6); // July 6, 2021 (months are 0-indexed)
 
 // Get the current date
 const currentDate = new Date();
@@ -39,16 +39,22 @@ if (remainingDays < 0) {
 // Adjust months to be 1-indexed
 months += 1;
 
+// If months is 12, increment the year and reset months to 0
+if (months === 12) {
+    years++;
+    months = 0;
+}
+
 const year = document.getElementById('year');
 const month = document.getElementById('month');
 const day = document.getElementById('day');
 const countDays = document.getElementById('count-days');
 
-
 year.textContent = years;
 month.textContent = months;
 day.textContent = remainingDays;
 countDays.textContent = days;
+
 
 
 function setActive(event, tab) {
